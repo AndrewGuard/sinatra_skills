@@ -19,3 +19,13 @@ design_skills.each do |skill|
 end
 
 # TODO: create associations between users and skills
+
+#create a few proficiencies (the join table)
+
+Proficiency.create :user_id => 1, :skill_id => 1, :years_experience => 107, :formal_education => false
+Proficiency.create :user_id => 2, :skill_id => 2, :years_experience => 34, :formal_education => true
+Proficiency.create :user_id => 3, :skill_id => 1, :years_experience => 107, :formal_education => false
+Proficiency.create :user_id => 1, :skill_id => 2, :years_experience => 107, :formal_education => false
+Proficiency.create :user_id => 1, :skill_id => 3, :years_experience => 107, :formal_education => false
+Proficiency.create :user_id => 2, :skill_id => 1, :years_experience => 34, :formal_education => true
+
